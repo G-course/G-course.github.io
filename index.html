@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的课程</title>
+    <style>
+        /* 全屏容器，使用flex布局 */
+        .container {
+            display: flex;
+            justify-content: space-between; /* 水平两端对齐 */
+            align-items: flex-start; /* 顶部对齐 */
+            min-height: 100vh;
+        }
+        
+        /* 主内容区域 */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        /* 右上角图片容器 */
+        .top-right-image {
+            padding: 20px;
+        }
+        
+        /* 图片样式 */
+        .top-right-image img {
+            width: 120px; /* 图片宽度 */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* 悬停动画 */
+        }
+        
+        /* 图片悬停效果 */
+        .top-right-image img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到我的课程主页</h1>
+<div class="container">
+        <div class="main-content">
+            <h1>欢迎来到我的课程主页</h1>
     <p>将记录我的所有讲义</p>
     <h2>解析数论导引（习题）</h2>
     <p> 习题课时间为双周周三下午5-6节课，地点为中国科学院大学（雁栖湖）教三楼106。
@@ -22,5 +57,11 @@
 <br> 3.分析类技术会很多，一定要敢于面对复杂的计算。
 <br> 4.<b>学会使用AI。</b>直立猿的优势在于使用工具，不拥抱现代科学技术迟早要被淘汰。<b>但是，AI 不是天使降临，你需要有能力识别 AI 输出的是答案还是幻觉。同时，AI 也不是洪水猛兽，它暂时淘汰不了你，</b>它秒答出一些你完全不会的问题很可能是因为它的训练集里有。至于如何使用 AI，每个人都会逐步形成自己习惯的工作模式，我的建议是多尝试各种 AI （千问除外，目前看这玩意更适合买奶茶...），每个 AI 的提示方法都有一些差别，以及每个 AI 擅长的工作也有差别。</p>
     <p><a href="https://github.com/G-course/G-course.github.io/blob/main/Problem_set_1.pdf" target="_blank">习题 1</a></p>
+        </div>
+        
+        <div class="top-right-image">
+            <img src="https://github.com/G-course/G-course.github.io/blob/main/%E5%B0%81%E9%9D%A22.jpg" alt="图片寄了">
+        </div>
+    </div>
 </body>
 </html>
